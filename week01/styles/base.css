@@ -1,0 +1,95 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #12304a;
+    color: white;
+    padding: 20px;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #f2c14e;
+    color: black;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Cards using CSS Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.card h2 {
+    text-align: center;
+    color: #12304a;
+}
+
+.card img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #12304a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
