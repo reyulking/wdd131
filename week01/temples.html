@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A collection of beautiful temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Rey">
+
+    <title>Temple Album | Rey | WDD 131</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS: Mobile first, then larger screens -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a class="site-title" href="temples.html">Temple Album</a>
+
+            <button id="menu-button"
+                    class="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="#album" data-filter="old">Old</a>
+                <a href="#album" data-filter="new">New</a>
+                <a href="#album" data-filter="large">Large</a>
+                <a href="#album" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+
+        <h1>Temple Album</h1>
+
+        <p class="intro">
+            A collection of sacred temples, beautiful architecture,
+            and places of worship around the world.
+        </p>
+
+        <div class="temple-grid" id="album">
+
+            <figure data-age="old" data-size="large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Salt Lake Temple in Utah"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Salt Lake Temple – Utah, USA</figcaption>
+            </figure>
+
+            <figure data-age="old" data-size="large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing historic temples"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+
+            <figure data-age="old" data-size="small">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing smaller temples"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Hong Kong China Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing newer temples"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="small">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing a smaller temple"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Cebu City Philippines Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing a large temple"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="small">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing a smaller temple"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Urdaneta Philippines Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="large">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing a large temple"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Alabang Philippines Temple</figcaption>
+            </figure>
+
+            <figure data-age="new" data-size="small">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salt_Lake_Temple_Front_1.jpg?width=640"
+                     alt="Temple architecture representing a smaller temple"
+                     loading="lazy"
+                     width="640"
+                     height="480">
+                <figcaption>Manila Philippines Temple – Renovated</figcaption>
+            </figure>
+
+        </div>
+
+        <p class="image-note">
+            Photo placeholder: Salt Lake Temple image from Wikimedia Commons.
+            Replace the repeated placeholder with individual temple photographs
+            before treating the album as a finished photographic collection.
+            <a href="https://commons.wikimedia.org/wiki/File:Salt_Lake_Temple_Front_1.jpg"
+               target="_blank" rel="noopener noreferrer">Image source and license</a>.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Rey | WDD 131
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>

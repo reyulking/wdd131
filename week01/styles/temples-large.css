@@ -1,0 +1,70 @@
+/* ==============================
+   TEMPLE ALBUM - LARGE SCREEN CSS
+================================= */
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        padding: 1.2rem 2rem;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* HIDE HAMBURGER */
+
+    .menu-button {
+        display: none;
+    }
+
+    /* NAVIGATION */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        border-top: none;
+        border-radius: 5px;
+        padding: 0.7rem 1rem;
+    }
+
+    /* MAIN */
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* TEMPLE GRID */
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 230px;
+    }
+}
+
+/* TABLET VIEW */
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
