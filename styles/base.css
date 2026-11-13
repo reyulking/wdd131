@@ -28,3 +28,9 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
