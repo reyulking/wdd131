@@ -41,7 +41,8 @@ p {
 
 .row {
 	display: grid;
-	grid-template-columns: 1fr 1fr; /* was 100px 100px; 1fr fits inside the bordered table */
+	grid-template-columns: 1fr 1fr;
+	/* was 100px 100px; 1fr fits inside the bordered table */
 	align-items: center;
 	text-align: center;
 }
