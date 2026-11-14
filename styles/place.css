@@ -1,0 +1,179 @@
+/* ---------- Global CSS variables (Philippine flag palette) ---------- */
+:root {
+    --blue: #0038a8;
+    --red: #ce1126;
+    --yellow: #fcd116;
+    --white: #ffffff;
+    --ink: #1b1b1b;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --font-main: "Lato", "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Base / mobile-first ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--ink);
+    background-color: var(--white);
+    line-height: 1.4;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-bottom: 0.6rem solid var(--red);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+main {
+    position: relative;
+}
+
+picture,
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem 1.25rem 1.25rem;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.weather {
+    border-top: 2px solid var(--yellow);
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto 0.75rem;
+}
+
+/* label / value pairs */
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.75rem;
+    row-gap: 0.3rem;
+    max-width: 22rem;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+dt {
+    text-align: right;
+    font-weight: 700;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.6rem solid var(--red);
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+/* ---------- Wide view ---------- */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    main {
+        min-height: 480px;
+    }
+
+    /* hero image fills the main area behind the cards */
+    picture {
+        position: absolute;
+        inset: 0;
+    }
+
+    picture img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+        position: absolute;
+        z-index: 1;
+        text-align: left;
+        width: 19rem;
+        border-radius: 6px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    .data {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .weather {
+        right: 1.5rem;
+        bottom: 1.5rem;
+        border-top: none;
+        width: 17rem;
+    }
+
+    .card h2 {
+        background-color: var(--blue);
+        color: var(--white);
+        margin: -1rem -1.25rem 1rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Weather icon moves to a pseudo-element after the heading */
+    .weather h2::after {
+        content: " \26C5";
+        /* ⛅ */
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    dl {
+        grid-template-columns: auto 1fr;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        min-height: 560px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Quick facts and current weather for the Philippines, a tropical island nation in Southeast Asia.">
+    <title>The Philippines | Place Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Philippines</h1>
+    </header>
+
+    <main>
+        <!-- Hero image: srcset + sizes via <picture>, WebP format -->
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/philippines-large.webp" type="image/webp">
+            <source media="(min-width: 600px)" srcset="images/philippines-medium.webp" type="image/webp">
+            <img src="images/philippines-small.webp"
+                alt="Mayon Volcano rising above green hills and the sea at sunrise in Bicol, Philippines" width="640"
+                height="480" fetchpriority="high">
+        </picture>
+
+        <section class="card data" aria-labelledby="data-heading">
+            <h2 id="data-heading">Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>300,000 km&sup2;</dd>
+                <dt>Population:</dt>
+                <dd>115,843,670</dd>
+                <dt>Capital:</dt>
+                <dd>Manila</dd>
+                <dt>Languages:</dt>
+                <dd>Filipino, English</dd>
+                <dt>Currency:</dt>
+                <dd>Philippine Peso (PHP)</dd>
+                <dt>Time Zone:</dt>
+                <dd>UTC+8</dd>
+                <dt>Calling Code:</dt>
+                <dd>+63</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.ph</dd>
+            </dl>
+        </section>
+
+        <section class="card weather" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Weather</h2>
+            <!-- SVG icon: shown in mobile view only -->
+            <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="64" height="64">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><span id="temperature">30</span>&nbsp;&deg;C</dd>
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+                <dt>Wind:</dt>
+                <dd><span id="wind-speed">6</span>&nbsp;km/h</dd>
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill">N/A</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#127477;&#127469; Your Name &#127477;&#127469; Naga, Bicol, Philippines
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
