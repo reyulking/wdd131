@@ -83,3 +83,35 @@ a:active {
 .row:last-child {
 	background-color: #aaa;
 }
+
+:root {
+	--bord: 1px solid #777;
+}
+
+a:visited {
+	color: navy;
+}
+
+a:hover {
+	color: purple;
+}
+
+a:active {
+	color: navy;
+}
+
+.datatable {
+	border: var(--bord);
+}
+
+.row:nth-child(n + 2) {
+	border-top: var(--bord);
+}
+
+.col:nth-child(n + 2) {
+	border-left: var(--bord);
+}
+
+.row:last-child {
+	background-color: #aaa;
+}
