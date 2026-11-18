@@ -62,21 +62,21 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "PASTE-A-REAL-IMAGE-URL-HERE"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-75244-main.jpg"
   },
   {
     templeName: "Laie Hawaii",
     location: "Laie, Hawaii, United States",
     dedicated: "1919, November, 27",
     area: 42100,
-    imageUrl: "PASTE-A-REAL-IMAGE-URL-HERE"
+    imageUrl: "images/laie-hawaii-temple.jpg"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41010,
-    imageUrl: "PASTE-A-REAL-IMAGE-URL-HERE"
+    imageUrl: "images/rome-italy-temple.jpg"
   }
 ];
 
