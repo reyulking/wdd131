@@ -69,7 +69,7 @@ const temples = [
     location: "Laie, Hawaii, United States",
     dedicated: "1919, November, 27",
     area: 42100,
-    imageUrl: "images/laie-hawaii-temple.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg"
   },
   {
     templeName: "Rome Italy",
