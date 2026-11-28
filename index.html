@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Rey Uy Lavadia</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Rey Uy Lavadia</title>
     <meta name="description"
-        content="Home page for WDD 131 Dynamic Web Fundamentals by Rey Uy Lavadia, a chemist and educator from the Philippines.">
+        content="WDD 131 – Dynamic Web Fundamentals home page of Rey Uy Lavadia: chemist, educator, and web development student.">
     <meta name="author" content="Rey Uy Lavadia">
     <link rel="icon" href="data:,">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
@@ -20,38 +22,54 @@
 
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-
-        <nav>
-            <a href="https://www.linkedin.com/in/rey-lavadia-b2000926/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
-            <a href="final-project/">Final Project</a>
-        </nav>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     </header>
 
+    <nav>
+        <a href="https://www.linkedin.com/in/rey-lavadia-b2000926/">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+        <a href="final-project/">Final Project</a>
+    </nav>
+
     <main>
-        <h1>WDD131 - Rey Uy Lavadia</h1>
+        <h1>Rey Uy Lavadia</h1>
 
-        <div class="gallery">
-            <section class="card">
-                <h2>About Me</h2>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-body">
+                <img class="profile" src="images/profile.jpg" alt="Portrait of Rey Uy Lavadia" width="150">
                 <p>Hello! I am Rey Uy Lavadia, a chemist and educator from the Philippines. I enjoy teaching
-                    Physics, Chemistry, and Mathematics.</p>
-                <img src="images/profile.jpeg" alt="My profile picture" width="200">
-            </section>
+                    Physics, Chemistry, and Mathematics, and I am now learning to build websites.</p>
 
-            <section class="card">
-                <h2>Salt Lake Temple</h2>
-                <p>The Salt Lake Temple in Utah is one of the most recognized landmarks of The Church of Jesus
-                    Christ of Latter-day Saints.</p>
-                <img src="images/saltlaketemple.jpeg" alt="Salt Lake Temple in Utah" width="200">
-            </section>
-        </div>
+                <h3>Philippines</h3>
+                <div class="location">
+                    <figure>
+                        <img src="images/philippines.jpg" alt="Scenic view of the Philippines" width="150">
+                        <figcaption>Scenery in the Philippines</figcaption>
+                    </figure>
+                    <p>The Philippines is a country in Southeast Asia known for its many islands, rich culture,
+                        and friendly people.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="card-body">
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Rey Uy Lavadia | Philippines</p>
+        <p>&copy;<span id="currentyear"></span> | Rey Uy Lavadia | Philippines</p>
         <p id="lastModified"></p>
     </footer>
 </body>
